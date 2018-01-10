@@ -5,6 +5,8 @@ This is a bot for my own private Server
 ## Getting Started
 
 To run the bot you have to execute the .jar file in ./out/artifacts/DiscrodBot2/DiscordBot2.jar
+Will only work on my Server unless you change the Tokens to your Bot Token.
+Please dont use mine.
 
 ### Prerequisites
 
