@@ -24,7 +24,7 @@ Prefix: "!"
 
 Commands:
 
---Utility:
+* Utility:
 ```
 help/h: Gives a List of Commands plus their description, you can execute with this Bot 
 ping: Testing if the Bot is working
@@ -34,7 +34,7 @@ clear: Will clear a given amount of Messages in the current Channel, (Admin use 
 chat: Can restrict Channel Writing for Admin, Mod & Mitlgied, (Admin use only) restricted on Channels "meme" & "nsfw"
 
 ```
---Music
+* Music
 ```
 music: Music Command Arguments: p/play: Will play a Song from a given link, can also search for vids on YT
 				"user short" you can specify for which User the Bot play the Song (p will not work after that), 
@@ -47,7 +47,7 @@ music: Music Command Arguments: p/play: Will play a Song from a given link, can 
 				queue: Shows whats in the curretn Queue
 	Usage: !m [args1] [args2]
 ```
---Entertainment:
+* Entertainment:
 ```
 image:  Image Api Arguments: 500px [topic]: Will give you a Image from [500px](https://500px.com) Topic selection isnt implemented yet
 			     Pinterest: Gives a image from a specific Pinterest Board
