@@ -2,6 +2,7 @@ package api;
 
 import java.io.*;
 import java.net.*;
+import java.util.Arrays;
 
 
 import org.apache.commons.codec.binary.Base64;
@@ -13,6 +14,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import util.STATIC;
 
 import javax.json.Json;
 
@@ -42,7 +44,43 @@ public class JsonSimple {
 
         switch (api) {
             case "500px":
-                url = "https://api.500px.com/v1/photos?feature=popular&only=nude&nsfw=true&sort=created_at&image_size=3&include_store=store_download&include_states=voted&consumer_key=h3VhLzB1fbAhDi8ksBQ6uoNDweBOSOYJaVeBVYxX";
+                if(Arrays.stream(STATIC.INTS).parallel().anyMatch(query::contains))
+                {
+                    switch(query) {
+                        case "1": query="Celebrties"; break;
+                        case "2": query="Film"; break;
+                        case "3": query="Journalism"; break;
+                        case "4": query="Nude"; break;
+                        case "5": query="black+and+white"; break;
+                        case "6": query="still+life"; break;
+                        case "7": query="People"; break;
+                        case "8": query="Landscapes"; break;
+                        case "9": query="city+%26+architecture"; break;
+                        case "10": query="Abstract"; break;
+                        case "11": query="Animals"; break;
+                        case "12": query="Macro"; break;
+                        case "13": query="Travel"; break;
+                        case "14": query="Fashion"; break;
+                        case "15": query="Commercial"; break;
+                        case "16": query="Concert"; break;
+                        case "17": query="Sport"; break;
+                        case "18": query="Nature"; break;
+                        case "19": query="performing+arts"; break;
+                        case "20": query="Family"; break;
+                        case "21": query="Street"; break;
+                        case "22": query="Underwater"; break;
+                        case "23": query="Food"; break;
+                        case "24": query="Fine+Art"; break;
+                        case "25": query="Wedding"; break;
+                        case "26": query="Transportation"; break;
+                        case "27": query="Urban+Exlporation"; break;
+                        case "30": query="Night"; break;
+                        case "29": query="Aerial"; break;
+                        default: query=""; break;
+                    }
+                }
+                System.out.println("Showing Image from 500px Category: " + query);
+                url = "https://api.500px.com/v1/photos?feature=popular&only=" + query + "&nsfw=true&sort=created_at&image_size=3&include_store=store_download&include_states=voted&consumer_key=h3VhLzB1fbAhDi8ksBQ6uoNDweBOSOYJaVeBVYxX";
                 break;
             case "Bing":
                 String image = bing();

@@ -89,6 +89,7 @@ public class Main {
 
         /*Entertainment*/
         commandHandler.commands.put("image", new cmdImage());
+        commandHandler.commands.put("img", new cmdImage());
         commandHandler.commands.put("LoL", new LeagueProfile());
 
         /*NSFW*/
