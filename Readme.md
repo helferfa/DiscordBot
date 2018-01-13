@@ -16,43 +16,48 @@ Of course you will need java
 Give examples
 ```
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+### Commands
 
 ```
-Give the example
+Prefix: "!"
 ```
 
-And repeat
+Commands:
+
+--Utility:
+```
+help/h: Gives a List of Commands plus their description, you can execute with this Bot 
+ping: Testing if the Bot is working
+list: gives a List of Users viewing the current channel, also just for tests
+poke: Will send a message to a User in Private Chat to wake him up --- Usage: !poke @user msg
+clear: Will clear a given amount of Messages in the current Channel, (Admin use only)
+chat: Can restrict Channel Writing for Admin, Mod & Mitlgied, (Admin use only) restricted on Channels "meme" & "nsfw"
 
 ```
-until finished
+--Music
+```
+music: Music Command Arguments: p/play: Will play a Song from a given link, can also search for vids on YT
+				"user short" you can specify for which User the Bot play the Song (p will not work after that), 
+					you can continue with playing a sound from the soundboard, see [Discord Soundboard](https://helferfa.bplaced.net/Discord/index.htnl) for Options
+				skip/s: Skips the current Song/Track
+				stop: Stops Playing, and leaves Channel
+				quit: Stronger Stop, Use if Bot gets stuck/broken
+				shuffle: Shuffles all Songs in current Playlist
+				now/info: Gives a Information about the current Track
+				queue: Shows whats in the curretn Queue
+	Usage: !m [args1] [args2]
+```
+--Entertainment:
+```
+image:  Image Api Arguments: 500px [topic]: Will give you a Image from [500px](https://500px.com) Topic selection isnt implemented yet
+			     Pinterest: Gives a image from a specific Pinterest Board
+			     "NSFW"
+			     boobs: Uses Russian Website Api to give you some nudes [oboobs](https://obutts.ru)
+			     butts: Uses Russian Website Api to give you some nudes [obutts](https://obutts.ru)
+LoL: gives you informations about a League of Legends Profile
+
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 

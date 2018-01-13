@@ -50,7 +50,7 @@ public class Chat implements Command {
         try {
             if (permsCore.checkmore(event) < 2)
                 return;
-            if(!event.getTextChannel().getName().equals("meme") || !event.getTextChannel().getName().equals("nsfw") || !event.getTextChannel().getName().equals("testing")) {
+            if(!event.getTextChannel().getName().equals("meme") && !event.getTextChannel().getName().equals("nsfw") && !event.getTextChannel().getName().equals("testing")) {
                 event.getTextChannel().sendMessage(":warning: Sorry this command is only for Usage in 'meme' & 'nsfw' Channel").queue();
                 return;
             }
