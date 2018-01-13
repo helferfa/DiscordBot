@@ -22,16 +22,18 @@ Give examples
 Prefix: "!"
 ```
 
-Commands:
+|   Category    |  Command   | Description  |   Example   |
+|---------------|------------|--------------|-------------|
+| Utility       |  help/h:   |Gives a List of Commands plus their description, you can execute with this Bot| !help | 
+|		|   ping:    |Testing if the Bot is working| !ping |
+|               |   list:    |gives a List of Users viewing the current channel, also just for tests| !list |
+|               |   poke:    |Will send a message to a User in Private Chat to wake him up| !poke @user msg |
+|               |   clear:   |Will clear a given amount of Messages in the current Channel, (Admin use only)| !clear [int] |
+|               |   chat:    |Can restrict Channel Writing for Admin, Mod & Mitlgied, (Admin use only) restricted on Channels "meme"  & "nsfw"| !chat [ban/free] |
 
 * Utility:
 ```
-help/h: Gives a List of Commands plus their description, you can execute with this Bot 
-ping: Testing if the Bot is working
-list: gives a List of Users viewing the current channel, also just for tests
-poke: Will send a message to a User in Private Chat to wake him up --- Usage: !poke @user msg
-clear: Will clear a given amount of Messages in the current Channel, (Admin use only)
-chat: Can restrict Channel Writing for Admin, Mod & Mitlgied, (Admin use only) restricted on Channels "meme" & "nsfw"
+
 
 ```
 * Music
@@ -59,9 +61,12 @@ LoL: gives you informations about a League of Legends Profile
 ```
 
 
-## Deployment
+## Test
 
-Add additional notes about how to deploy this on a live system
+| Day     | Meal    | Price |
+| --------|---------|-------|
+| Monday  | pasta   | $6    |
+| Tuesday | chicken | $8    |
 
 ## Built With
 
