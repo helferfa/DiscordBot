@@ -4,7 +4,8 @@ package core;
 
 import commands.Entertainment.LeagueProfile;
 import commands.Entertainment.Music;
-import commands.Entertainment.cmdImage;
+import commands.Entertainment.cmd_ImgMerge;
+import commands.Entertainment.cmd_getImageAPI;
 import commands.NSFW.boobs;
 import commands.NSFW.butts;
 import commands.utility.*;
@@ -88,8 +89,9 @@ public class Main {
         commandHandler.commands.put("m", new Music());
 
         /*Entertainment*/
-        commandHandler.commands.put("image", new cmdImage());
-        commandHandler.commands.put("img", new cmdImage());
+        commandHandler.commands.put("image", new cmd_getImageAPI());
+        commandHandler.commands.put("img", new cmd_getImageAPI());
+        commandHandler.commands.put("img2", new cmd_ImgMerge());
         commandHandler.commands.put("LoL", new LeagueProfile());
 
         /*NSFW*/

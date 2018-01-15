@@ -1,6 +1,7 @@
 package commands.Entertainment;
 
 import api.JsonSimple;
+import com.sun.xml.internal.bind.v2.TODO;
 import commands.Command;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.MessageBuilder;
@@ -16,7 +17,7 @@ public class LeagueProfile implements Command {
     public void action(String[] args, MessageReceivedEvent event) {
         if(args.length > 1) {
             try {
-                String json = JsonSimple.call_me(args[0], args[1]);
+                String json = JsonSimple.call_me("LoL", args[1]);
                 String[] s = json.split(" ");
                 //event.getTextChannel().getMessage().delete();
                 event.getTextChannel().sendMessage(new EmbedBuilder()
