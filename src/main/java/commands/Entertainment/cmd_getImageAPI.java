@@ -35,8 +35,16 @@ public class cmd_getImageAPI implements Command {
         else {
             if (args.length > 1) {
                 try {
-                    String json = JsonSimple.call_me(args[0], args[1]);
-                    //event.getTextChannel().getMessage().delete();
+                    String json;
+                    if(args[0].equals("500px") && (args[1].equals("x") || args[1].equals("random")))
+                    {
+                        int randomNum = 1 + (int)(Math.random() * 30);
+                        json = JsonSimple.call_me(args[0], String.valueOf(randomNum));
+                    } else {
+
+                        json = JsonSimple.call_me(args[0], args[1]);
+                        //event.getTextChannel().getMessage().delete();
+                    }
                     event.getTextChannel().sendMessage(json).queue();
                 } catch (Exception e) {
                     event.getTextChannel().sendMessage(":warning: Oops Something went wrong").queue();

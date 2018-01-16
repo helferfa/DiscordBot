@@ -76,7 +76,7 @@ public class JsonSimple {
                         case "27": query="Urban+Exlporation"; break;
                         case "30": query="Night"; break;
                         case "29": query="Aerial"; break;
-                        default: query=""; break;
+                        default: query="Nude"; break;
                     }
                 }
                 System.out.println("Showing Image from 500px Category: " + query);
