@@ -24,19 +24,17 @@ Prefix: "!"
 
 |   Category    |  Command   | Description  |   Example   |
 |---------------|------------|--------------|-------------|
-| Utility       |  help/h:   |Gives a List of Commands plus their description, you can execute with this Bot| !help | 
+| * Utility       |  help/h:   |Gives a List of Commands plus their description, you can execute with this Bot| !help | 
 |		|   ping:    |Testing if the Bot is working| !ping |
 |               |   list:    |gives a List of Users viewing the current channel, also just for tests| !list |
 |               |   poke:    |Will send a message to a User in Private Chat to wake him up| !poke @user msg |
 |               |   clear:   |Will clear a given amount of Messages in the current Channel, (Admin use only)| !clear [int] |
 |               |   chat:    |Can restrict Channel Writing for Admin, Mod & Mitlgied, (Admin use only) restricted on Channels "meme"  & "nsfw"| !chat [ban/free] |
+|* Music        |  p/play:   | Will play a Song from a given link, can also search for YT videos | !m p url/query|
+|               |[user short] + [sound]: | you can specify to wich user the Bot will join (p will not work after this), after this you can play a sound from the soundboard see, [Sondboard](https://helferfa.bplaced.net/Discord/index.html) for Optios| !m f wtf |
+|               |  skip/s:   | Skips the current Song/Track | !m skip |
+|               |  stop: 
 
-* Utility:
-```
-
-
-```
-* Music
 ```
 music: Music Command Arguments: p/play: Will play a Song from a given link, can also search for vids on YT
 				"user short" you can specify for which User the Bot play the Song (p will not work after that), 
