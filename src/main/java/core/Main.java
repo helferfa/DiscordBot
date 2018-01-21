@@ -18,6 +18,7 @@ import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
 import util.SECRETS;
+import
 
 import javax.security.auth.login.LoginException;
 
@@ -31,7 +32,7 @@ public class Main {
 
         builder = new JDABuilder(AccountType.BOT);
 
-        builder.setToken(SECRETS.TOKEN);
+        builder.setToken(.TOKEN);
         builder.setAutoReconnect(true);
 
         builder.setStatus(OnlineStatus.ONLINE);
