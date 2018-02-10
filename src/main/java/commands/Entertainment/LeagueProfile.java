@@ -17,15 +17,24 @@ public class LeagueProfile implements Command {
     public void action(String[] args, MessageReceivedEvent event) {
         if(args.length > 1) {
             try {
-                String json = JsonSimple.call_me("LoL", args[1]);
-                String[] s = json.split(" ");
-                //event.getTextChannel().getMessage().delete();
-                event.getTextChannel().sendMessage(new EmbedBuilder()
-                        .setTitle("LoL Profile")
-                        .setImage("http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/"+ s[0] +".png")
-                        .setTitle("Profile: freshddumb")
-                        .build()
-                ).queue();
+                switch(args[0]) {
+                    case "GameStat":
+                        String jsongame = JsonSimple.call_me("GameStat", args[1]);
+                        System.out.println(jsongame);
+
+                        break;
+                    case "LoL":
+                        String json = JsonSimple.call_me("LoL", args[1]);
+                        String[] s = json.split(" ");
+                        //event.getTextChannel().getMessage().delete();
+                        event.getTextChannel().sendMessage(new EmbedBuilder()
+                                .setTitle("LoL Profile")
+                                .setImage("http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/" + s[0] + ".png")
+                                .setTitle("Profile: freshddumb")
+                                .build()
+                        ).queue();
+                        break;
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

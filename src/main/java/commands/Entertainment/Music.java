@@ -248,7 +248,7 @@ public class Music implements Command {
             case "f":
                soundboard(args[1], (Member) ownerlist.get(STATIC.FRESHDUMBLEDORE), event); break;
             case "d":
-                soundboard(args[1], (Member) memberlist.get(STATIC.DERASTROPHYSIKER), event); break;
+                soundboard(args[1], (Member) ownerlist.get(STATIC.DREAD), event); break;
             case "i":
                 soundboard(args[1], (Member) ownerlist.get(STATIC.INDERTAT), event); break;
             case "h":

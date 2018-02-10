@@ -9,14 +9,15 @@ public class STATIC {
     public static final  int DERASTROPHYSIKER  = 23;
     public static final  int NEKOCHAN = 17;
     public static final  int IMTHEGENIUS = 4;
-    public static final  int FRESHDUMBLEDORE = 1;
+    public static final  int FRESHDUMBLEDORE = 2;
     public static final  int THEBOX27 = 26;
     public static final  int TIM = 15;
     public static final  int ABOUK = 13;
     public static final  int MARIOSTALIN = 15;
-    public static final  int INDERTAT = 4;
-    public static final  int HERAIM = 7;
-    public static final  int DOCTORICAN = 3;
+    public static final  int INDERTAT = 6;
+    public static final  int HERAIM = 10;
+    public static final  int DOCTORICAN = 4;
+    public static final int DREAD = 1;
     public static final  int JEFFDERSCHWAETZER = 18;
     public static final  int JEANCLAUDEVANRAMME = 10;
 

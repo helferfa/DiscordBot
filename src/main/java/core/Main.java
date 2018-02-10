@@ -18,7 +18,7 @@ import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
 import util.SECRETS;
-import
+import java.io.*;
 
 import javax.security.auth.login.LoginException;
 
@@ -31,8 +31,13 @@ public class Main {
     {
 
         builder = new JDABuilder(AccountType.BOT);
-
-        builder.setToken(.TOKEN);
+        String s = "null";
+        try {
+            s = getToken();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        builder.setToken(s);
         builder.setAutoReconnect(true);
 
         builder.setStatus(OnlineStatus.ONLINE);
@@ -69,6 +74,14 @@ public class Main {
             e.printStackTrace();
         }
 
+    }
+
+    public static String getToken() throws IOException {
+        FileReader fr = new FileReader("C:/Users/Fabian Helfer/OneDrive/Dokumente/Discord_Bot2/Token.txt");
+        BufferedReader br = new BufferedReader(fr);
+        String zeile1 = br.readLine();
+        br.close();
+        return zeile1;
     }
 
     /**

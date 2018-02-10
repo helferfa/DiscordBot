@@ -98,8 +98,14 @@ public class JsonSimple {
             case "oButts":
                 url = "http://api.obutts.ru/butts/" + randomInt(5000) + "/1/rank";
                 break;
+            case "LoLGET":
+                url = "https://euw1.api.riotgames.com/lol/summoner/v3/summoners/70637474?api_key=RGAPI-5e63f887-9e55-43d4-aef1-fd7cd4bb7ace";
+            break;
+            case "GameStat":
+                url = "https://euw1.api.riotgames.com/lol/spectator/v3/active-games/by-summoner/31387316?api_key=RGAPI-5161d817-149d-4aa7-831d-d0f125f93687";
+                break;
             case "LoL":
-                url = "https://euw1.api.riotgames.com/lol/summoner/v3/summoners/70637474?api_key=RGAPI-b08faeb4-861c-4f62-9c95-c8bdc143e218";
+                url = "https://euw1.api.riotgames.com/lol/summoner/v3/summoners/70637474?api_key=RGAPI-5e63f887-9e55-43d4-aef1-fd7cd4bb7ace";
                 break;
             default: url = "https://api.pinterest.com/v1/boards/124482445889528340/?access_token=AY1YbT9MODLzkC7LdNVxecl0H4XBFOim1UUyCk5EWt4-y0A3hgAAAAA&fields=id%2Cname%2Curl";
                 break;
@@ -170,7 +176,9 @@ public class JsonSimple {
                 JSONObject profileJSON = (JSONObject) profile.parse(response.toString());
                 String ret = (String) profileJSON.get("profileIconId").toString() + " " + profileJSON.get("name").toString();
                 return ret;
+            case "GameStat":
 
+                return response.toString();
 
 
 
