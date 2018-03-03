@@ -2,23 +2,20 @@
 
 package core;
 
-import commands.Entertainment.LeagueProfile;
-import commands.Entertainment.Music;
-import commands.Entertainment.cmd_ImgMerge;
-import commands.Entertainment.cmd_getImageAPI;
+import commands.Entertainment.*;
 import commands.NSFW.boobs;
 import commands.NSFW.butts;
 import commands.utility.*;
 import listeners.messageListener;
 import listeners.readyListener;
-import net.dv8tion.jda.core.AccountType;
-import net.dv8tion.jda.core.JDA;
-import net.dv8tion.jda.core.JDABuilder;
-import net.dv8tion.jda.core.OnlineStatus;
+import listeners.voiceListener;
+import net.dv8tion.jda.core.*;
 import net.dv8tion.jda.core.entities.Game;
+import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
 import util.SECRETS;
 import java.io.*;
+import java.util.Date;
 
 import javax.security.auth.login.LoginException;
 
@@ -41,7 +38,7 @@ public class Main {
         builder.setAutoReconnect(true);
 
         builder.setStatus(OnlineStatus.ONLINE);
-        builder.setGame(Game.of("!help"));
+        builder.setGame(Game.of(Game.GameType.DEFAULT, "!help"));
         /*builder.setGame(new Game() {
             @Override
             public String getName() {
@@ -67,10 +64,13 @@ public class Main {
         try {
             JDA jda = builder.buildBlocking();
         } catch (LoginException e) {
+            System.out.print("[" + new Date().getHours() + ":" + new Date().getMinutes() + "] ");
             e.printStackTrace();
         } catch (InterruptedException e) {
+            System.out.print("[" + new Date().getHours() + ":" + new Date().getMinutes() + "] ");
             e.printStackTrace();
         } catch (RateLimitedException e) {
+            System.out.print("[" + new Date().getHours() + ":" + new Date().getMinutes() + "] ");
             e.printStackTrace();
         }
 
@@ -107,6 +107,7 @@ public class Main {
         commandHandler.commands.put("img", new cmd_getImageAPI());
         commandHandler.commands.put("img2", new cmd_ImgMerge());
         commandHandler.commands.put("LoL", new LeagueProfile());
+        commandHandler.commands.put("lol", new LoLCommand());
 
         /*NSFW*/
         commandHandler.commands.put("boobs", new boobs());
@@ -116,7 +117,7 @@ public class Main {
 
     private static void addListeners() {
         builder.addEventListener(new messageListener());
-        //builder.addEventListener(new voiceListener());
+        builder.addEventListener(new voiceListener());
         builder.addEventListener(new readyListener());
     }
 }

@@ -21,12 +21,7 @@ import javax.json.Json;
 public class JsonSimple {
 
     public static void main(String[] args) throws Exception {
-        System.out.println("     p/play : Fügt einen Song der Playlist hinzu -- Usage !m p [Url/YT Search Terms] \n \b     " +
-                "q/queue : Gibt aus welche Songs sich in der Queue befinden \n \b     " +
-                "now/info : Gibt den aktuellen ong wieder \n \b     " +
-                "s/stop/quit : Stoppt die Wiedergabe und verlässt den Channel, wenn dies nicht funktioniert benutzt quit, falls dies auch nicht funktioniert ist der Bot in einen Kritischen Fehler gelaufen und muss neu gestartet werden \n \b     " +
-                "shuffle : Shuffled die Songs in der Queue (might not work) \n \b     " +
-                "[User Short] Startet die Persönliche Soundboard Wiedergabe -- Usage !m [User Short] [Sound Short] für die bessere/einfachere Nutzung: https://helferfa.bplaced.net/Discord/index.html");
+        System.out.println("test");
     }
 
     private static int randomInt(int high)

@@ -17,8 +17,8 @@ public class LeagueProfile implements Command {
     public void action(String[] args, MessageReceivedEvent event) {
         if(args.length > 1) {
             try {
-                switch(args[0]) {
-                    case "GameStat":
+                switch (args[0]) {
+                    case "Game":
                         String jsongame = JsonSimple.call_me("GameStat", args[1]);
                         System.out.println(jsongame);
 
@@ -39,6 +39,7 @@ public class LeagueProfile implements Command {
                 e.printStackTrace();
             }
         }
+
     }
 
     @Override
