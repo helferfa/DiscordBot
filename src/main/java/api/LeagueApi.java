@@ -1,32 +1,47 @@
 package api;
 
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.MessageBuilder;
+import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.entities.MessageEmbed;
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+import org.json.JSONException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.Charset;
 
 public class LeagueApi {
 
     private static String api_key = "RGAPI-5e63f887-9e55-43d4-aef1-fd7cd4bb7ace";
     public String summoner, ID;
     public static String url;
+    public MessageReceivedEvent e;
 
     public static void main(String[] args) {
-        String summoner_test = "TinaFuchs";
-        LeagueApi lol = new LeagueApi();
+        String summoner_test = "freshddumb";
+        LeagueApi lol = new LeagueApi(null);
         try {
-            lol.process(summoner_test);
+            String[] profileinfos = lol.profileMessage("freshddumb");
+            for (String s : profileinfos
+                 ) {
+                System.out.println(s);
+            }
+            //System.out.println(profileinfos.toString());
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public LeagueApi(MessageReceivedEvent e) {
+        this.e = e;
     }
 
     public void process(String name) throws Exception {
@@ -71,6 +86,9 @@ public class LeagueApi {
                     int responseCode = con.getResponseCode();
                     System.out.println("\nSending 'GET' request to URL : " + url);
                     System.out.println("Response Code : " + responseCode);
+                    if(responseCode==429) {
+                        e.getTextChannel().sendMessage(new MessageBuilder().setContent(":warning: Rate limit exceeded").build()).queue();
+                    }
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(con.getInputStream()));
                     String inputLine;
@@ -96,6 +114,9 @@ public class LeagueApi {
                     int responseCode = con.getResponseCode();
                     System.out.println("\nSending 'GET' request to URL : " + url);
                     System.out.println("Response Code : " + responseCode);
+                    if(responseCode==429) {
+                        e.getTextChannel().sendMessage(new MessageBuilder().setContent(":warning: Rate limit exceeded").build()).queue();
+                    }
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(con.getInputStream()));
                     String inputLine;
@@ -112,19 +133,85 @@ public class LeagueApi {
                 }
 
     public String[] profileMessage(String name) throws Exception {
+        JSONParser p = new JSONParser();
+        JSONObject j = new JSONObject();
         summoner = name;
         JSONObject profile = ping("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summoner + "?api_key=" + api_key, false);
 
         String[] list = new String[10];
         list[0]= profile.get("name").toString();
 
-        JSONObject rank = ping("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + profile.get("id").toString() + "?api_key=" + api_key, true);
+        String id = profile.get("id").toString();
+        try {
+            JSONObject rank = ping("https://euw1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + id + "?api_key=" + api_key, true);
 
-        list[1] = rank.get("tier").toString() + " " +  rank.get("rank").toString();
+            list[1] = rank.get("tier").toString() + " " +  rank.get("rank").toString();
 
-        list[2] = rank.get("tier").toString();
+            list[2] = rank.get("tier").toString();
+            } catch (Exception e)
+        {
+            list[1] = "unranked";
+            list[2] = "silver";
+        }
 
-        list[3] = profile.get("profileIconId").toString();
+        String profileIconID = profile.get("profileIconId").toString();
+        JsonReader js = new JsonReader();
+        JSONObject stream = js.readJsonFromUrl("http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/profileicon.json");
+        JSONObject icons = (JSONObject) stream.get("data");
+        System.out.println(profileIconID);
+        try {
+            System.out.println(icons.get(profileIconID));
+            if(icons.get(profileIconID)==null) {
+                list[3]="7";
+            } else {
+                list[3] = profileIconID;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            list[3] = "7";
+
+        }
+        JSONObject mastery = ping("https://euw1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/" + id + "?api_key=" + api_key, true);
+        System.out.println(mastery.toString());
+        String champID = mastery.get("championId").toString();
+
+        try {
+            JSONObject champ = ping("https://euw1.api.riotgames.com/lol/static-data/v3/champions/" + champID + "?locale=en_US&api_key=" + api_key, false);
+            list[4] = champ.get("key").toString();
+        } catch (Exception e) {
+            list[4] = "ratelimitexceeded";
+        }
+
         return list;
     }
+
+    public static class JsonReader {
+
+        private String readAll(Reader rd) throws IOException {
+            StringBuilder sb = new StringBuilder();
+            int cp;
+            while ((cp = rd.read()) != -1) {
+                sb.append((char) cp);
+            }
+            return sb.toString();
+        }
+
+        public JSONObject readJsonFromUrl(String url) throws IOException, JSONException, ParseException {
+            InputStream is = new URL(url).openStream();
+            try {
+                BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+                String jsonText = readAll(rd);
+                JSONParser p = new JSONParser();
+                JSONObject json = (JSONObject) p.parse(jsonText);
+                return json;
+            } finally {
+                is.close();
+            }
+        }
+
+        public JsonReader() throws IOException, JSONException, ParseException {
+
+        }
+    }
 }
+
