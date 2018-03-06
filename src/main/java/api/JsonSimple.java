@@ -140,7 +140,8 @@ public class JsonSimple {
                 JSONObject iterator2 = (JSONObject) msg.get(ran);
                 System.out.println(iterator2.get("image_url"));
 
-                return (String) iterator2.get("image_url");
+                JSONArray js = (JSONArray) iterator2.get("image_url");
+                return js.get(0).toString();
 
 
 

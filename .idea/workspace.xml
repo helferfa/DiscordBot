@@ -8,13 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cbe5ce15-ed4a-4377-91f7-b23eafe3109f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/DiscordBot2_jar/DiscordBot2.jar" afterPath="$PROJECT_DIR$/out/artifacts/DiscordBot2_jar/DiscordBot2.jar" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/JsonSimple.java" afterPath="$PROJECT_DIR$/src/main/java/api/JsonSimple.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/permsCore.java" afterPath="$PROJECT_DIR$/src/main/java/core/permsCore.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/listeners/voiceListener.java" afterPath="$PROJECT_DIR$/src/main/java/listeners/voiceListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/STATIC.java" afterPath="$PROJECT_DIR$/src/main/java/util/STATIC.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/core/Main.class" afterPath="$PROJECT_DIR$/target/classes/core/Main.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/listeners/readyListener.class" afterPath="$PROJECT_DIR$/target/classes/listeners/readyListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/api/JsonSimple.class" afterPath="$PROJECT_DIR$/target/classes/api/JsonSimple.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/permsCore.class" afterPath="$PROJECT_DIR$/target/classes/core/permsCore.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/listeners/voiceListener.class" afterPath="$PROJECT_DIR$/target/classes/listeners/voiceListener.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/STATIC.class" afterPath="$PROJECT_DIR$/target/classes/util/STATIC.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,20 +39,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2720">
               <caret line="178" column="49" lean-forward="false" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="STATIC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/STATIC.java">
+      <file leaf-file-name="JsonSimple.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/JsonSimple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+            <state relative-caret-position="1377">
+              <caret line="112" column="55" lean-forward="false" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -62,8 +57,8 @@
       <file leaf-file-name="voiceListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/listeners/voiceListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="420">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -72,18 +67,18 @@
       <file leaf-file-name="ListenerAdapter.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.4.0_317/JDA-3.4.0_317.jar!/net/dv8tion/jda/core/hooks/ListenerAdapter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2276">
-              <caret line="475" column="30" lean-forward="true" selection-start-line="475" selection-start-column="30" selection-end-line="475" selection-end-column="30" />
+            <state relative-caret-position="-14329">
+              <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clear.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/utility/Clear.java">
+      <file leaf-file-name="permsCore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/permsCore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+            <state relative-caret-position="-90">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -92,18 +87,8 @@
       <file leaf-file-name="readyListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/listeners/readyListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="119" column="8" lean-forward="true" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+            <state relative-caret-position="425">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,35 +100,6 @@
             <state relative-caret-position="68">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeagueProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LeagueProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-              <folding>
-                <element signature="e#1723#1724#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoLCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#3163#3164#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -184,7 +140,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/commands/utility/Clear.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/permsCore.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/utility/Chat.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/cmdImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
@@ -193,16 +148,17 @@
         <option value="$PROJECT_DIR$/src/main/java/util/SECRETS.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/api/JsonSimple.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/utility/CmdPause.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LeagueProfile.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/api_chat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/STATIC.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/readyListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/permsCore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/voiceListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/JsonSimple.java" />
       </list>
     </option>
   </component>
@@ -385,14 +341,6 @@
               <item name="DiscordBot2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DiscordBot2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiscordBot2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -407,9 +355,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -648,7 +596,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33779263" sideWeight="0.4946695" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22068231" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -661,7 +609,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -845,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="49" column="104" lean-forward="false" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,35 +825,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/permsCore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="91" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/utility/CmdPause.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/cmd_getImageAPI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="59" column="116" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/JsonSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1411">
-          <caret line="133" column="81" lean-forward="false" selection-start-line="132" selection-start-column="17" selection-end-line="133" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/SECRETS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -938,8 +860,8 @@
         <state relative-caret-position="527">
           <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="false" />
+            <element signature="e#1750#1751#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -963,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,41 +892,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/api_chat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#3163#3164#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="178" column="49" lean-forward="false" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1768">
+          <caret line="119" column="8" lean-forward="false" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/STATIC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+        <state relative-caret-position="442">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/SECRETS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/utility/Clear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.4.0_317/JDA-3.4.0_317.jar!/net/dv8tion/jda/core/hooks/ListenerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14329">
+          <caret line="218" column="16" lean-forward="false" selection-start-line="218" selection-start-column="16" selection-end-line="218" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/readyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1018,42 +962,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="119" column="8" lean-forward="true" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
+        <state relative-caret-position="2720">
+          <caret line="178" column="49" lean-forward="false" selection-start-line="178" selection-start-column="49" selection-end-line="178" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.4.0_317/JDA-3.4.0_317.jar!/net/dv8tion/jda/core/hooks/ListenerAdapter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/JsonSimple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2276">
-          <caret line="475" column="30" lean-forward="true" selection-start-line="475" selection-start-column="30" selection-end-line="475" selection-end-column="30" />
+        <state relative-caret-position="1377">
+          <caret line="112" column="55" lean-forward="false" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/utility/Clear.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/permsCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="73" column="27" lean-forward="true" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/readyListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="35" column="49" lean-forward="false" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state relative-caret-position="-90">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/listeners/voiceListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding />
         </state>
       </provider>

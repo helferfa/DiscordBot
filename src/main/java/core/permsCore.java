@@ -23,6 +23,7 @@ public class permsCore {
         return 0;
     }
 
+
     public static int checkmore(MessageReceivedEvent event)
     {
         for ( Role r : event.getGuild().getMember(event.getAuthor()).getRoles() ) {
