@@ -21,24 +21,67 @@ public class ImgMerge extends JFrame {
         //this.profile = profile;
         //processImages();
     }
-    public static void main(String[] args) {
-        new ImgMerge("combine").processImages();
-    }
 
-    public void getImage()
-    {
+    public static void main(String[] args) {
+
         try {
-                ImageIcon myImage = new ImageIcon(new URL("https://cdn.discordapp.com/avatars/190194096072163328/0c72ade1b85b4faab01a1396ffca1034.png"));
-                Image img = myImage.getImage();
-                BufferedImage img2 = new BufferedImage(128, 128,
-                        BufferedImage.TYPE_INT_RGB);
-            Graphics g2 = img2.getGraphics();
-                g2.drawImage(img,0,0,this);
-                ImageIO.write(img2,"png",new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/avatar.png"));
-            }
-         catch (IOException e) {
+            new ImgMerge("combine").createLeague();
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+    }
+
+    public void getImage() {
+        try {
+            ImageIcon myImage = new ImageIcon(new URL("https://cdn.discordapp.com/avatars/190194096072163328/0c72ade1b85b4faab01a1396ffca1034.png"));
+            Image img = myImage.getImage();
+            BufferedImage img2 = new BufferedImage(128, 128,
+                    BufferedImage.TYPE_INT_RGB);
+            Graphics g2 = img2.getGraphics();
+            g2.drawImage(img, 0, 0, this);
+            ImageIO.write(img2, "png", new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/avatar.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getChampionSkins(String[] champs) {
+        try {
+            for(int i = 0; i<10; i++) {
+                ImageIcon myImage = new ImageIcon(new URL("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + champs[i] + ".jpg"));
+                Image img = myImage.getImage();
+                BufferedImage img2 = new BufferedImage(308, 560,
+                        BufferedImage.TYPE_INT_RGB);
+                Graphics g2 = img2.getGraphics();
+                g2.drawImage(img, 0, 0, this);
+                ImageIO.write(img2, "jpg", new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/" + i + ".jpg"));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void createLeague() throws IOException {
+        File path = new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/");
+        ImageIcon[] images = new ImageIcon[10];
+        for (int i = 0; i < 10; i++) {
+            images[i] = new ImageIcon(ImageIO.read(new File(path, "" + i + ".jpg")));
+        }
+        mergeImage =
+                new BufferedImage(
+                        1540, 1120,
+                        BufferedImage.TYPE_INT_RGB);
+        for (int i = 0; i < 10; i++) {
+            Graphics g = mergeImage.getGraphics();
+            if (i < 5) {
+                g.drawImage(images[i].getImage(), i * 308, 0, this);
+            } else {
+                g.drawImage(images[i].getImage(), (i - 5) * 308, 560, this);
+            }
+        }
+        ImageIO.write(mergeImage, "jpg", new File(path, "merged.jpg"));
     }
 
     /**

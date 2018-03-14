@@ -387,7 +387,7 @@ public class Music implements Command {
                     loadTrack("https://youtu.be/ZZ5LpwO-An4?list=PLPbYmF3GfbKhKZKdu551Lq776n9-Qsnlc", cmdmember, e.getMessage());
                     break;
                 case "porn":
-                    loadTrack("https://youtu.be/NiFD6EFVsTg?list=PLPbYmF3GfbKhKZKdu551Lq776n9-Qsnlc", cmdmember, e.getMessage());
+                    loadTrack("https://youtu.be/NiFD6EFVsTg", cmdmember, e.getMessage());
                     break;
                 case "wtf":
                     loadTrack("https://youtu.be/AXzEcwYs8Eo?list=PLPbYmF3GfbKhKZKdu551Lq776n9-Qsnlc", cmdmember, e.getMessage());
