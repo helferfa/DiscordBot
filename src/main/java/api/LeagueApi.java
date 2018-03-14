@@ -27,11 +27,12 @@ public class LeagueApi {
     public MessageReceivedEvent e;
 
     public static void main(String[] args) {
+        LeagueApi lol = new LeagueApi(null);
         /**
          * Testing to get Informations about User Informations
          */
         /*String summoner_test = "freshddumb";
-        LeagueApi lol = new LeagueApi(null);
+
         try {
             String[] profileinfos = lol.profileMessage("freshddumb");
             for (String s : profileinfos
@@ -46,6 +47,16 @@ public class LeagueApi {
         /**
          * Testing for Match Details
          */
+        try {
+            String[] s = lol.getChampionsFromGame("TinaFuchs");
+            for(int i = 0; i< s.length; i++){
+                System.out.println(s[i]);
+            }
+        } catch (Exception e1) {
+            e1.printStackTrace();
+        }
+
+
     }
 
     public LeagueApi(MessageReceivedEvent e) {
@@ -85,8 +96,15 @@ public class LeagueApi {
         return match;
     }
 
-    public String checkChampID() throws IOException, ParseException {
-
+    public String checkChampID(String id) throws IOException, ParseException {
+        JsonReader js = new JsonReader();
+        //JSONObject stream = js.readJsonFromUrlFTP("ftp://helferfa.bplaced.net/Discord/Champions.json");
+        //JSONObject stream = js.readJsonFromUrlFTP("C");
+        JSONParser parser = new JSONParser();
+        JSONObject obj = (JSONObject) parser.parse(new FileReader("c:\\Users\\Fabian Helfer\\OneDrive\\Dokumente\\DiscordBot2\\src\\assets\\json\\Champions.json"));
+        JSONObject data = (JSONObject) obj.get("data");
+        JSONObject champName = (JSONObject) data.get(id);
+        return champName.get("name").toString();
     }
 
     /**
@@ -176,11 +194,13 @@ public class LeagueApi {
 
     /**
      * Gives detailed Informations in an Array for a Summoner
-     * Contains: [0]: Summoner Name
+     * Contains:
+     * [0]: Summoner Name
      * [1]: Rank + Tier (e.g.: Silver III)
      * [2]: Elo (e.g. Silver)
      * [3]: Profile Icon ID [int]
      * [4]: Champ ID with most Mastery
+     * [5-19] null
      *
      * @param name Summoner Name
      * @return List of Infomations about the Summoner
@@ -240,15 +260,17 @@ public class LeagueApi {
 
 
     public String[] getChampionsFromGame(String summonerName) throws Exception {
+        String[] champs = new String[10];
         String summonerID = getSummonerID(summonerName);
         JSONObject match = (JSONObject) getMatch(summonerID);
         JSONArray participants = (JSONArray) match.get("participants");
         for(int i = 0; i<10; i++) {
             JSONObject summoner = (JSONObject) participants.get(i);
             String champID = summoner.get("championId").toString();
-
+            String champName = checkChampID(champID);
+            champs[i]=champName;
         }
-
+        return champs;
     }
 
     /**
@@ -266,6 +288,19 @@ public class LeagueApi {
         }
 
         public JSONObject readJsonFromUrl(String url) throws IOException, JSONException, ParseException {
+            InputStream is = new URL(url).openStream();
+            try {
+                BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+                String jsonText = readAll(rd);
+                JSONParser p = new JSONParser();
+                JSONObject json = (JSONObject) p.parse(jsonText);
+                return json;
+            } finally {
+                is.close();
+            }
+        }
+
+        public JSONObject readJsonFromUrlFTP(String url) throws IOException, JSONException, ParseException {
             InputStream is = new URL(url).openStream();
             try {
                 BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));

@@ -7,16 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbe5ce15-ed4a-4377-91f7-b23eafe3109f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sedmelluq_lavaplayer_natives_1_2_55.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sedmelluq_lavaplayer_1_2_47.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sedmelluq_lavaplayer_1_2_56.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DiscordBot2.iml" afterPath="$PROJECT_DIR$/DiscordBot2.iml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/DiscordBot2_jar/DiscordBot2.jar" afterPath="$PROJECT_DIR$/out/artifacts/DiscordBot2_jar/DiscordBot2.jar" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/0.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/0.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/1.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/1.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/2.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/2.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/3.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/3.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/4.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/4.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/5.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/5.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/6.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/6.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/7.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/7.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/8.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/8.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/9.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/9.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/imgs/merged.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/merged.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/1.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/1.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/assets/json/Champions.json" afterPath="$PROJECT_DIR$/src/assets/json/Champions.json" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" afterPath="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" afterPath="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/Entertainment/Music.class" afterPath="$PROJECT_DIR$/target/classes/commands/Entertainment/Music.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,110 +44,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JsonSimple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/JsonSimple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="112" column="55" lean-forward="false" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Music.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="436" column="25" lean-forward="false" selection-start-line="436" selection-start-column="25" selection-end-line="436" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmd_ImgMerge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/cmd_ImgMerge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="69" lean-forward="false" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImgMerge.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImgMerge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state relative-caret-position="454">
+              <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeagueApi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeagueApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
-                <element signature="method#main#0;class#LeagueApi#0" expanded="false" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1810#1811#0" expanded="true" />
                 <element signature="method#ping#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#getResponse#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#getResponseARR#0;class#LeagueApi#0" expanded="false" />
-                <element signature="class#JsonReader#0;class#LeagueApi#0" expanded="false" />
+                <element signature="method#profileMessage#0;class#LeagueApi#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoLCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmd_getImageAPI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/cmd_getImageAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="59" column="116" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="116" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messageListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/messageListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -200,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/NSFW/boobs.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
       </list>
     </option>
   </component>
@@ -212,9 +138,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="13" />
-    <option name="y" value="-15" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-1894" />
+    <option name="y" value="-25" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -234,7 +160,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,13 +204,6 @@
               <item name="DiscordBot2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DiscordBot2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiscordBot2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DiscordBot2" type="b2602c69:ProjectViewProjectNode" />
@@ -399,9 +321,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,8 +489,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.ImgMerge" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LeagueApi" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LeagueApi" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -623,7 +542,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-7" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
@@ -633,12 +553,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5053305" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.4946695" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33779263" sideWeight="0.4946695" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454158" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23720682" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -870,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="45" column="115" lean-forward="false" selection-start-line="45" selection-start-column="115" selection-end-line="45" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,10 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#758#759#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,7 +904,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="6783">
           <caret line="436" column="25" lean-forward="false" selection-start-line="436" selection-start-column="25" selection-end-line="436" selection-end-column="25" />
           <folding />
         </state>
@@ -1005,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/cmd_getImageAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="850">
           <caret line="59" column="116" lean-forward="false" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="116" />
           <folding />
         </state>
@@ -1019,17 +926,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="255">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
@@ -1037,17 +936,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
           <folding>
-            <element signature="method#main#0;class#LeagueApi#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
             <element signature="method#ping#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#getResponse#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#getResponseARR#0;class#LeagueApi#0" expanded="false" />
-            <element signature="class#JsonReader#0;class#LeagueApi#0" expanded="false" />
+            <element signature="method#profileMessage#0;class#LeagueApi#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>

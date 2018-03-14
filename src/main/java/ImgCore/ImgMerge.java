@@ -1,5 +1,7 @@
 package ImgCore;
 
+import api.LeagueApi;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -25,8 +27,12 @@ public class ImgMerge extends JFrame {
     public static void main(String[] args) {
 
         try {
-            new ImgMerge("combine").createLeague();
+            ImgMerge m = new ImgMerge("combine");
+            m.getChampionSkins(new LeagueApi(null).getChampionsFromGame("69TheFallen69"));
+            m.createLeague();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -50,7 +56,8 @@ public class ImgMerge extends JFrame {
     public void getChampionSkins(String[] champs) {
         try {
             for(int i = 0; i<10; i++) {
-                ImageIcon myImage = new ImageIcon(new URL("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + champs[i] + ".jpg"));
+                ImageIcon myImage = new ImageIcon(new URL("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + champs[i] + "_0.jpg"));
+                System.out.println("http://ddragon.leagueoflegends.com/cdn/img/champion/loading/" + champs[i] + "_0.jpg");
                 Image img = myImage.getImage();
                 BufferedImage img2 = new BufferedImage(308, 560,
                         BufferedImage.TYPE_INT_RGB);

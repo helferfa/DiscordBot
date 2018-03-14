@@ -83,34 +83,353 @@
 "81": {
 "name": "Ezreal"
 },
-"": {
-"name": ""
+"9": {
+"name": "FiddleSticks"
 },
-"": {
-"name": ""
+"114": {
+"name": "Fiora"
 },
-"": {
-"name": ""
+"105": {
+"name": "Fizz"
 },
-"": {
-"name": ""
+"3": {
+"name": "Galio"
 },
-
-"": {
-"name": ""
+"41": {
+"name": "Gangplank"
 },
-v
-"": {
-"name": ""
+"86": {
+"name": "Garen"
 },
-"": {
-"name": ""
+"150": {
+"name": "Gnar"
 },
-"": {
-"name": ""
-},"": {
-"name": ""
+"79": {
+"name": "Gragas"
 },
+"104": {
+"name": "Graves"
+},
+"120": {
+"name": "Hecarim"
+},
+"74": {
+"name": "Heimerdinger"
+},
+"420": {
+"name": "Illaoi"
+},
+"39": {
+"name": "Irelia"
+},
+"427": {
+"name": "Ivern"
+},
+"40": {
+"name": "Janna"
+},
+"59": {
+"name": "JarvanIV"
+},
+"24": {
+"name": "Jax"
+},
+"126": {
+"name": "Jayce"
+},
+"202": {
+"name": "Jhin"
+},
+"222": {
+"name": "Jinx"
+},
+"145": {
+"name": "Kaisa"
+},
+"429": {
+"name": "Kalista"
+},
+"43": {
+"name": "Karma"
+},
+"30": {
+"name": "Karthus"
+},
+"38": {
+"name": "Kassadin"
+},
+"55": {
+"name": "Katarina"
+},
+"10": {
+"name": "Kayle"
+},
+"85": {
+"name": "Kennen"
+},
+"121": {
+"name": "Khazix"
+},
+"203": {
+"name": "Kindred"
+},
+"240": {
+"name": "Kled"
+},
+"96": {
+"name": "KogMaw"
+},
+"7": {
+"name": "Leblanc"
+},
+"64": {
+"name": "LeeSin"
+},
+"89": {
+"name": "Leona"
+},
+"127": {
+"name": "Lissandra"
+},
+"236": {
+"name": "Lucian"
+},
+"117": {
+"name": "Lulu"
+},
+"99": {
+"name": "Lux"
+},
+"54": {
+"name": "Malphite"
+},
+"90": {
+"name": "Malzahar"
+},
+"57": {
+"name": "Maokai"
+},
+"11": {
+"name": "MasterYi"
+},
+"21": {
+"name": "MissFortune"
+},
+"62": {
+"name": "MonkeyKing"
+},
+"82": {
+"name": "Mordekaiser"
+},
+"25": {
+"name": "Morgana"
+},
+"267": {
+"name": "Nami"
+},
+"75": {
+"name": "Nasus"
+},
+"111": {
+"name": "Nautilus"
+},
+"76": {
+"name": "Nidalee"
+},
+"56": {
+"name": "Nocturne"
+},
+"20": {
+"name": "Nunu"
+},
+"2": {
+"name": "Olaf"
+},
+"61": {
+"name": "Orianna"
+},
+"80": {
+"name": "Pantheon"
+},
+"78": {
+"name": "Poppy"
+},
+"133": {
+"name": "Quinn"
+},
+"497": {
+"name": "Rakan"
+},
+"33": {
+"name": "Rammus"
+},
+"421": {
+"name": "RekSai"
+},
+"58": {
+"name": "Renekton"
+},
+"107": {
+"name": "Rengar"
+},
+"92": {
+"name": "Riven"
+},
+"68": {
+"name": "Rumble"
+},
+"13": {
+"name": "Ryze"
+},
+"113": {
+"name": "Sejuani"
+},
+"35": {
+"name": "Shaco"
+},
+"98": {
+"name": "Shen"
+},
+"102": {
+"name": "Shyvana"
+},
+"27": {
+"name": "Singed"
+},
+"14": {
+"name": "Sion"
+},
+"15": {
+"name": "Sivir"
+},
+"72": {
+"name": "Skarner"
+},
+"37": {
+"name": "Sona"
+},
+"16": {
+"name": "Soraka"
+},
+"50": {
+"name": "Swain"
+},
+"134": {
+"name": "Syndra"
+},
+"223": {
+"name": "TahmKench"
+},
+"163": {
+"name": "Taliyah"
+},
+"91": {
+"name": "Talon"
+},
+"44": {
+"name": "Taric"
+},
+"17": {
+"name": "Teemo"
+},
+"412": {
+"name": "Thresh"
+},
+"18": {
+"name": "Tristana"
+},
+"48": {
+"name": "Trundle"
+},
+"23": {
+"name": "Tryndamere"
+},
+"4": {
+"name": "TwistedFate"
+},
+"29": {
+"name": "Twitch"
+},
+"77": {
+"name": "Udyr"
+},
+"6": {
+"name": "Urgot"
+},
+"110": {
+"name": "Varus"
+},
+"67": {
+"name": "Vayne"
+},
+"45": {
+"name": "Veigar"
+},
+"161": {
+"name": "Velkoz"
+},
+"254": {
+"name": "Vi"
+},
+"112": {
+"name": "Viktor"
+},
+"8": {
+"name": "Vladimir"
+},
+"106": {
+"name": "Volibear"
+},
+"19": {
+"name": "Warwick"
+},
+"498": {
+"name": "Xayah"
+},
+"101": {
+"name": "Xerath"
+},
+"5": {
+"name": "XinZhao"
+},
+"157": {
+"name": "Yasuo"
+},
+"83": {
+"name": "Yorick"
+},
+"154": {
+"name": "Zac"
+},
+"238": {
+"name": "Zed"
+},
+"115": {
+"name": "Ziggs"
+},
+"26": {
+"name": "Zilean"
+},
+"142": {
+"name": "Zoe"
+},
+"143": {
+"name": "Zyra"
+},
+"516": {
+"name": "Ornn"
+},
+"141": {
+"name": "Kayn"
+},
+"164": {
+"name": "Camille"
+},
+"427": {
+"name": "Ivern"
+},
+"240": {
+"name": "Kled"
 }
 }
-
+}
