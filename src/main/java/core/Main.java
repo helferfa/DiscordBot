@@ -77,7 +77,7 @@ public class Main {
     }
 
     public static String getToken() throws IOException {
-        FileReader fr = new FileReader("C:/Users/Fabian Helfer/OneDrive/Dokumente/Discord_Bot2/Token.txt");
+        FileReader fr = new FileReader("C:/Users/Fabian Helfer/OneDrive/Dokumente/FDiscord_Bot2/Token.txt");
         BufferedReader br = new BufferedReader(fr);
         String zeile1 = br.readLine();
         br.close();

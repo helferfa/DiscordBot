@@ -19,11 +19,10 @@
       <change beforePath="$PROJECT_DIR$/src/assets/imgs/8.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/8.jpg" />
       <change beforePath="$PROJECT_DIR$/src/assets/imgs/9.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/9.jpg" />
       <change beforePath="$PROJECT_DIR$/src/assets/imgs/merged.jpg" afterPath="$PROJECT_DIR$/src/assets/imgs/merged.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/assets/json/1.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/json/1.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/json/Champions.json" afterPath="$PROJECT_DIR$/src/assets/json/Champions.json" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" afterPath="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" afterPath="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" afterPath="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/Main.java" afterPath="$PROJECT_DIR$/src/main/java/core/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,8 +46,37 @@
       <file leaf-file-name="ImgMerge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+            <state relative-caret-position="145">
+              <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+              <folding>
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="method#getImage#0;class#ImgMerge#0" expanded="false" />
+                <element signature="method#getChampionSkins#0;class#ImgMerge#0" expanded="false" />
+                <element signature="method#processImages#0;class#ImgMerge#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoLCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="67" column="125" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="125" />
+              <folding>
+                <element signature="e#3365#3366#0" expanded="true" />
+                <element signature="e#3392#3393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="79" column="83" lean-forward="false" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -57,15 +85,21 @@
       <file leaf-file-name="LeagueApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="1377">
+              <caret line="208" column="10" lean-forward="false" selection-start-line="208" selection-start-column="10" selection-end-line="208" selection-end-column="10" />
               <folding>
+                <element signature="method#main#0;class#LeagueApi#0" expanded="false" />
                 <element signature="e#1784#1785#0" expanded="true" />
                 <element signature="e#1810#1811#0" expanded="true" />
+                <element signature="method#getSummonerID#0;class#LeagueApi#0" expanded="false" />
+                <element signature="method#getMatch#0;class#LeagueApi#0" expanded="false" />
+                <element signature="method#checkChampID#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#ping#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#getResponse#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#getResponseARR#0;class#LeagueApi#0" expanded="false" />
                 <element signature="method#profileMessage#0;class#LeagueApi#0" expanded="false" />
+                <element signature="method#getChampionsFromGame#0;class#LeagueApi#0" expanded="false" />
+                <element signature="class#JsonReader#0;class#LeagueApi#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -116,10 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LeagueProfile.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/api_chat.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/STATIC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/readyListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/permsCore.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/voiceListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/JsonSimple.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/messageListener.java" />
@@ -127,6 +159,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/Music.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/api/LeagueApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java" />
       </list>
     </option>
@@ -138,9 +172,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1894" />
-    <option name="y" value="-25" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="3" />
+    <option name="y" value="-17" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -489,8 +523,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Application.ImgMerge" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LeagueApi" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LeagueApi" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +576,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-7" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -661,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/javax/imageio/ImageIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.4.0_317/JDA-3.4.0_317.jar!/net/dv8tion/jda/core/entities/User.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -778,14 +805,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/api_chat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="119" column="8" lean-forward="false" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/STATIC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -860,6 +879,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -926,34 +946,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="731">
+          <caret line="79" column="83" lean-forward="false" selection-start-line="79" selection-start-column="83" selection-end-line="79" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/LeagueApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="1377">
+          <caret line="208" column="10" lean-forward="false" selection-start-line="208" selection-start-column="10" selection-end-line="208" selection-end-column="10" />
           <folding>
+            <element signature="method#main#0;class#LeagueApi#0" expanded="false" />
             <element signature="e#1784#1785#0" expanded="true" />
             <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="method#getSummonerID#0;class#LeagueApi#0" expanded="false" />
+            <element signature="method#getMatch#0;class#LeagueApi#0" expanded="false" />
+            <element signature="method#checkChampID#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#ping#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#getResponse#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#getResponseARR#0;class#LeagueApi#0" expanded="false" />
             <element signature="method#profileMessage#0;class#LeagueApi#0" expanded="false" />
+            <element signature="method#getChampionsFromGame#0;class#LeagueApi#0" expanded="false" />
+            <element signature="class#JsonReader#0;class#LeagueApi#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Entertainment/LoLCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="67" column="125" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="125" />
+          <folding>
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3392#3393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/javax/imageio/ImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="1300" column="0" lean-forward="false" selection-start-line="1300" selection-start-column="0" selection-end-line="1300" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ImgCore/ImgMerge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="145">
+          <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding>
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="method#getImage#0;class#ImgMerge#0" expanded="false" />
+            <element signature="method#getChampionSkins#0;class#ImgMerge#0" expanded="false" />
+            <element signature="method#processImages#0;class#ImgMerge#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

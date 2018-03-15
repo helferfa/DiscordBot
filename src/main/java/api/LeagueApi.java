@@ -63,20 +63,12 @@ public class LeagueApi {
         this.e = e;
     }
 
-
-    /*public void process(String name) throws Exception {
-        this.summoner = name;
-        String sumID = getSummonerID(summoner);
-        System.out.println("Summoner ID:" + sumID);
-        getMatch(sumID);
-    }*/
-
     /**
      *
      * @return
      * @throws Exception
      */
-    public String getSummonerID(String summoner) throws Exception {
+    private String getSummonerID(String summoner) throws Exception {
         this.summoner = summoner;
         JSONObject obj = ping("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + summoner + "?api_key=" + api_key, false);
         System.out.println(obj.toString());
@@ -89,14 +81,22 @@ public class LeagueApi {
      * @return JsonObject Full Match
      * @throws Exception
      */
-    public JSONObject getMatch(String ID) throws Exception {
+    private JSONObject getMatch(String ID) throws Exception {
         this.ID = ID;
         JSONObject match = ping("https://euw1.api.riotgames.com/lol/spectator/v3/active-games/by-summoner/" + this.ID + "?api_key=" + api_key, false);
         System.out.println(match.toString());
         return match;
     }
 
-    public String checkChampID(String id) throws IOException, ParseException {
+    /**
+     * Chacks the Champ ID and return the Name of that ID
+     * Located JSON -> assets/json/Champions.json
+     * @param id
+     * @return Champion Name
+     * @throws IOException
+     * @throws ParseException
+     */
+    private String checkChampID(String id) throws IOException, ParseException {
         JsonReader js = new JsonReader();
         //JSONObject stream = js.readJsonFromUrlFTP("ftp://helferfa.bplaced.net/Discord/Champions.json");
         //JSONObject stream = js.readJsonFromUrlFTP("C");
@@ -115,7 +115,7 @@ public class LeagueApi {
      * @return JSONObject
      * @throws Exception
      */
-    public JSONObject ping(String url, boolean arr) throws Exception {
+    private JSONObject ping(String url, boolean arr) throws Exception {
         this.url = url;
         if (arr) {
             return getResponseARR();
@@ -131,7 +131,7 @@ public class LeagueApi {
      * @return JSONObject
      * @throws Exception
      */
-    public JSONObject getResponse() throws Exception {
+    private JSONObject getResponse() throws Exception {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         // optional default is GET
@@ -164,7 +164,7 @@ public class LeagueApi {
      * @return JSONObject from Array[0]
      * @throws Exception
      */
-    public JSONObject getResponseARR() throws Exception {
+    private JSONObject getResponseARR() throws Exception {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         // optional default is GET
@@ -258,7 +258,12 @@ public class LeagueApi {
         return list;
     }
 
-
+    /**
+     * Gets all Champions from the Game in an Array
+     * @param summonerName
+     * @return Chmapions Array
+     * @throws Exception
+     */
     public String[] getChampionsFromGame(String summonerName) throws Exception {
         String[] champs = new String[10];
         String summonerID = getSummonerID(summonerName);
