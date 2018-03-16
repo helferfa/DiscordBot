@@ -76,6 +76,11 @@
             <artifactId>javaee-api</artifactId>
             <version>7.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.cathive.fonts</groupId>
+            <artifactId>fonts-roboto</artifactId>
+            <version>LATEST</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,6 +1,8 @@
 package ImgCore;
 
 import api.LeagueApi;
+import com.cathive.fonts.roboto.RobotoFonts;
+import org.json.simple.JSONObject;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -31,12 +33,13 @@ public class ImgMerge extends JFrame {
              * Creates the League Picture
              */
             ImgMerge m = new ImgMerge("combine");
-            /*
 
-            m.getChampionSkins(new LeagueApi(null).getChampionsFromGame("69TheFallen69"));
+            LeagueApi lol = new LeagueApi(null)
+            m.getChampionSkins(lol.getChampionsFromGame("Veritate"));
+            m.createFooter(lol.getSummonersFromGame("Veritate"));
             m.createLeague();
-            */
-            m.createFooter();
+
+            //m.createFooter();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -45,18 +48,21 @@ public class ImgMerge extends JFrame {
 
     }
 
-    private void createFooter() throws IOException {
+    private void createFooter() throws IOException, FontFormatException {
         File path = new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/");
         BufferedImage footer = new BufferedImage(
                 308, 100,
                 BufferedImage.TYPE_INT_RGB);
         Graphics g = footer.getGraphics();
         ImageIcon img = new ImageIcon(ImageIO.read(new File(path, "7.png")));
+
         g.drawRect(0, 0, 307, 99);
+
         g.drawImage(img.getImage(), 5, 5, 90, 90, this);
 
-        g.setFont(new Font("Dubai", Font.PLAIN, 15));
-        g.drawString("Summoner freshddumb",100,50);
+
+        g.setFont(Font.createFont(Font.TRUETYPE_FONT, new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/fonts/roboto/Roboto-Regular.ttf")).deriveFont(12f));
+        g.drawString("Summoner freshddumb", 100, 50);
         ImageIO.write(footer, "jpg", new File(path, "1.jpg"));
     }
 
@@ -112,20 +118,65 @@ public class ImgMerge extends JFrame {
         }
         mergeImage =
                 new BufferedImage(
-                        1540, 1120,
+                        1540, 1320,
                         BufferedImage.TYPE_INT_RGB);
+        Graphics g = mergeImage.getGraphics();
         for (int i = 0; i < 10; i++) {
-            Graphics g = mergeImage.getGraphics();
             if (i < 5) {
                 g.drawImage(images[i].getImage(), i * 308, 0, this);
             } else {
-                g.drawImage(images[i].getImage(), (i - 5) * 308, 560, this);
+                g.drawImage(images[i].getImage(), (i - 5) * 308, 660, this);
             }
         }
+        ImageIcon[] footerimages = new ImageIcon[10];
+        for (int i = 0; i < 10; i++) {
+            footerimages[i] = new ImageIcon(ImageIO.read(new File(path, "footer" + i + ".jpg")));
+        }
+
+        for (int i = 0; i < 10; i++) {
+            if (i < 5) {
+                g.drawImage(footerimages[i].getImage(), i * 308, 560, this);
+            } else {
+                g.drawImage(footerimages[i].getImage(), (i - 5) * 308, 1220, this);
+            }
+        }
+
         ImageIO.write(mergeImage, "jpg", new File(path, "merged.jpg"));
     }
 
-    public void createFooter(String[] infos) {
+    public void createFooter(String[] infos) throws Exception {
+        File path = new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/");
+        for (int i = 0; i < 10; i++) {
+
+            BufferedImage footer = new BufferedImage(
+                    308, 100,
+                    BufferedImage.TYPE_INT_RGB);
+            Graphics g = footer.getGraphics();
+            saveProfilePic(infos);
+            ImageIcon img = new ImageIcon(ImageIO.read(new File(path, "profile" + i + ".png")));
+
+            g.drawRect(0, 0, 307, 99);
+
+            g.drawImage(img.getImage(), 5, 5, 90, 90, this);
+
+
+            g.setFont(Font.createFont(Font.TRUETYPE_FONT, new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/fonts/roboto/Roboto-Medium.ttf")).deriveFont(15f));
+            g.drawString("Summoner " + infos[i], 100, 50);
+            ImageIO.write(footer, "jpg", new File(path, "footer" + i + ".jpg"));
+        }
+    }
+
+    public void saveProfilePic(String[] participants) throws Exception {
+        File path = new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/");
+        for (int i = 0; i < 10; i++) {
+            BufferedImage footer = new BufferedImage(
+                    90, 90,
+                    BufferedImage.TYPE_INT_RGB);
+            Graphics g = footer.getGraphics();
+            ImageIcon img = new ImageIcon(ImageIO.read(new URL("http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/" + new LeagueApi(null).getProfileIconID(participants[i]) + ".png")));
+            g.drawImage(img.getImage(), 0, 0, 90, 90, this);
+            ImageIO.write(footer, "png", new File(path, "profile" + i + ".png"));
+        }
 
     }
 

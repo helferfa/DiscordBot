@@ -107,6 +107,30 @@ public class LeagueApi {
         return champName.get("name").toString();
     }
 
+    public String getProfileIconID(String name) throws Exception {
+        String profileIcon;
+        name = name.replaceAll(" ", "");
+        JSONObject profile = ping("https://euw1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + name + "?api_key=" + api_key, false);
+        String profileIconID = profile.get("profileIconId").toString();
+        JsonReader js = new JsonReader();
+        JSONObject stream = js.readJsonFromUrl("http://ddragon.leagueoflegends.com/cdn/6.24.1/data/en_US/profileicon.json");
+        JSONObject icons = (JSONObject) stream.get("data");
+        System.out.println(profileIconID);
+        try {
+            System.out.println(icons.get(profileIconID));
+            if (icons.get(profileIconID) == null) {
+                profileIcon = "7";
+            } else {
+                profileIcon = profileIconID;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            profileIcon = "7";
+
+        }
+        return profileIcon;
+    }
+
     /**
      * Method to Manage API requests
      *
@@ -277,6 +301,22 @@ public class LeagueApi {
         }
         return champs;
     }
+
+    public String[] getSummonersFromGame(String summonerName) throws Exception {
+        String[] names = new String[10];
+        String summonerID = getSummonerID(summonerName);
+        JSONObject match = (JSONObject) getMatch(summonerID);
+        JSONArray participants = (JSONArray) match.get("participants");
+        for(int i = 0; i<10; i++) {
+            JSONObject summoner = (JSONObject) participants.get(i);
+            String summonerName1 = summoner.get("summonerName").toString();
+
+            names[i]=summonerName1;
+        }
+        return names;
+    }
+
+
 
     /**
      * Class to Read Json Text from File
