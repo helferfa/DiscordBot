@@ -291,7 +291,7 @@ public class LeagueApi {
     public String[] getChampionsFromGame(String summonerName) throws Exception {
         String[] champs = new String[10];
         String summonerID = getSummonerID(summonerName);
-        JSONObject match = (JSONObject) getMatch(summonerID);
+        JSONObject match = getMatch(summonerID);
         JSONArray participants = (JSONArray) match.get("participants");
         for(int i = 0; i<10; i++) {
             JSONObject summoner = (JSONObject) participants.get(i);
@@ -305,7 +305,7 @@ public class LeagueApi {
     public String[] getSummonersFromGame(String summonerName) throws Exception {
         String[] names = new String[10];
         String summonerID = getSummonerID(summonerName);
-        JSONObject match = (JSONObject) getMatch(summonerID);
+        JSONObject match = getMatch(summonerID);
         JSONArray participants = (JSONArray) match.get("participants");
         for(int i = 0; i<10; i++) {
             JSONObject summoner = (JSONObject) participants.get(i);
@@ -314,6 +314,31 @@ public class LeagueApi {
             names[i]=summonerName1;
         }
         return names;
+    }
+
+    public String[] getDataFromGame(String summonerName) throws Exception {
+        String[] data = new String[20];
+        String summonerID = getSummonerID(summonerName);
+        JSONObject match = (JSONObject) getMatch(summonerID);
+        JSONArray participants = (JSONArray) match.get("participants");
+        for(int i = 0; i<10; i++) {
+            JSONObject summoner = (JSONObject) participants.get(i);
+            String summonerName1 = summoner.get("summonerName").toString();
+
+            data[i]=summonerName1;
+        }
+        for(int i = 10; i<20; i++) {
+            JSONObject summoner = (JSONObject) participants.get(i-10);
+            String champID = summoner.get("championId").toString();
+            String champName;
+            try {
+                champName = checkChampID(champID);
+            } catch (Exception e) {
+                champName = "Aatrox";
+            }
+            data[i]=champName;
+        }
+        return data;
     }
 
 

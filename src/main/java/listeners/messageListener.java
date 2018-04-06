@@ -10,8 +10,8 @@ public class messageListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
 
-        if (event.getMessage().getContent().startsWith("!") /*&& event.getMessage().getAuthor().getId() != event.getJDA().getSelfUser().getId()*/) {
-            commandHandler.handleCommand(commandHandler.parser.parse(event.getMessage().getContent(), event));
+        if (event.getMessage().getContentRaw().startsWith("!") /*&& event.getMessage().getAuthor().getId() != event.getJDA().getSelfUser().getId()*/) {
+            commandHandler.handleCommand(commandHandler.parser.parse(event.getMessage().getContentRaw(), event));
         }
 
     }

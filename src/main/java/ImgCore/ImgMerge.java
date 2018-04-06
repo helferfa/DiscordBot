@@ -34,9 +34,18 @@ public class ImgMerge extends JFrame {
              */
             ImgMerge m = new ImgMerge("combine");
 
-            LeagueApi lol = new LeagueApi(null)
-            m.getChampionSkins(lol.getChampionsFromGame("Veritate"));
-            m.createFooter(lol.getSummonersFromGame("Veritate"));
+            LeagueApi lol = new LeagueApi(null);
+            String[] data = lol.getDataFromGame("SchwarzesPhantom");
+            String[] champs = new String[10];
+            String[] names = new String[10];
+            for (int i = 0; i<10; i++) {
+                names[i] = data[i];
+            }
+            for (int i = 10; i<20; i++) {
+                champs[i-10] = data[i];
+            }
+            m.getChampionSkins(champs);
+            m.createFooter(names);
             m.createLeague();
 
             //m.createFooter();
@@ -146,13 +155,13 @@ public class ImgMerge extends JFrame {
 
     public void createFooter(String[] infos) throws Exception {
         File path = new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/");
+        saveProfilePic(infos);
         for (int i = 0; i < 10; i++) {
 
             BufferedImage footer = new BufferedImage(
                     308, 100,
                     BufferedImage.TYPE_INT_RGB);
             Graphics g = footer.getGraphics();
-            saveProfilePic(infos);
             ImageIcon img = new ImageIcon(ImageIO.read(new File(path, "profile" + i + ".png")));
 
             g.drawRect(0, 0, 307, 99);

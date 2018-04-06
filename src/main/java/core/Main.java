@@ -69,10 +69,10 @@ public class Main {
         } catch (InterruptedException e) {
             System.out.print("[" + new Date().getHours() + ":" + new Date().getMinutes() + "] ");
             e.printStackTrace();
-        } catch (RateLimitedException e) {
+        } /*catch (RateLimitedException e) {
             System.out.print("[" + new Date().getHours() + ":" + new Date().getMinutes() + "] ");
             e.printStackTrace();
-        }
+        }*/
 
     }
 

@@ -33,7 +33,17 @@ public class LoLCommand implements Command {
                  */
                 case "match":
                     ImgMerge img = new ImgMerge("ocmbine");
-                    img.getChampionSkins(new LeagueApi(event).getChampionsFromGame(name));
+                    String[] data = lol.getDataFromGame(name);
+                    String[] champs = new String[10];
+                    String[] names = new String[10];
+                    for (int i = 0; i<10; i++) {
+                        names[i] = data[i];
+                    }
+                    for (int i = 10; i<20; i++) {
+                        champs[i-10] = data[i];
+                    }
+                    img.getChampionSkins(champs);
+                    img.createFooter(names);
                     img.createLeague();
                     event.getTextChannel().sendFile(new File("C:/Users/Fabian Helfer/OneDrive/Dokumente/DiscordBot2/src/assets/imgs/merged.jpg")).queue();
                     break;
