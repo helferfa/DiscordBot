@@ -27,9 +27,9 @@ public class poke implements Command{
     @Override
     public void action(String[] args, MessageReceivedEvent event) {
 
-        if (permsCore.check(event) < 1)
+        /*if (permsCore.check(event) < 1)
             return;
-
+*/
         String message = String.join(" ", args).split("@")[0];
         User memb = event.getMessage().getMentionedUsers().size() > 0 ? event.getMessage().getMentionedUsers().get(0) : null;
         User author = event.getAuthor();
@@ -41,7 +41,7 @@ public class poke implements Command{
         }
 
         if (args.length > 0) {
-            if (args[0].startsWith("@")) {
+            if (args[0].contains("@")) {
                 if (!event.getGuild().isMember(event.getMessage().getMentionedUsers().get(0))) {
                     event.getTextChannel().sendMessage(
                             ":warning:   This user is not a member of this guild!"
@@ -68,7 +68,7 @@ public class poke implements Command{
 
     @Override
     public void executed(boolean success, MessageReceivedEvent event) {
-
+        System.out.println("Executed Poke");
     }
 
     @Override

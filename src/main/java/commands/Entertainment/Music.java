@@ -419,6 +419,9 @@ public class Music implements Command {
                 case "local":
                     loadTrack("C:\\Users\\helfe\\Music\\My Chemical Romance\\Three Cheers for Sweet Revenge\\02 Give 'Em Hell, Kid.mp3", cmdmember, e.getMessage());
                     break;
+                case "bitconnect":
+                    loadTrack("https://www.youtube.com/watch?v=xK3yuxrmCac", cmdmember, e.getMessage());
+                    break;
                 /*case "5":
                     loadTrack("", cmdmember, e.getMessage());
                     break;
