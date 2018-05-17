@@ -2,7 +2,7 @@ package util;
 
 public class STATIC {
 
-    public static final String VERSION = "0.73";
+    public static final String VERSION = "Testing";
 
     public static final String PREFIX = "!" ;
 

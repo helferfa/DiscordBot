@@ -402,7 +402,7 @@ public class Music implements Command {
                     loadTrack("https://youtu.be/Uufq_PFXbpA?list=PLTpBrFldxpIp8i-uODEZwW1Pej-BPvC2c", cmdmember, e.getMessage());
                     break;
                 case "tunak":
-                    loadTrack("https://youtu.be/vTIIMJ9tUc8?list=PLqrtG-YCnduTTHf_YnLjuWbtBpas8UiAp", cmdmember, e.getMessage());
+                    loadTrack("https://youtu.be/vTIIMJ9tUc8", cmdmember, e.getMessage());
                     break;
                 case "allstar":
                     loadTrack("https://youtu.be/L_jWHffIx5E?list=PLqrtG-YCnduTTHf_YnLjuWbtBpas8UiAp", cmdmember, e.getMessage());
