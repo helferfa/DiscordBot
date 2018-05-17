@@ -29,11 +29,12 @@ public class Main {
 
         builder = new JDABuilder(AccountType.BOT);
         String s = "null";
-        try {
+        s = SECRETS.TOKEN;
+        /*try {
             s = getToken();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         builder.setToken(s);
         builder.setAutoReconnect(true);
 
